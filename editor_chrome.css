@@ -1450,6 +1450,22 @@ canvas.decorationsOverviewRuler {
   flex-direction: column !important;
 }
 
+.monaco-icon-label:after {
+  margin-top: 0 !important;
+}
+.monaco-tl-contents .monaco-icon-label:after {
+  margin-left: 0 !important;
+}
+
+.monaco-scrollable-element .split-view-view .centered-layout-margin {
+  opacity: 0;
+}
+
+.monaco-scrollable-element .split-view-view .editor-container {
+  border-bottom-left-radius: var(--border-radius);
+  border-bottom-right-radius: var(--border-radius);
+}
+
 :root {
   --flyout-bg: rgba(252, 252, 252, 0.5);
   --menu-bg: rgba(252, 252, 252, 0.5);

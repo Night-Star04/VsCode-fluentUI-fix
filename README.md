@@ -25,11 +25,18 @@
    - editor_chrome.css#L253
 3. Adjust the color overlap error of selected items in the sidebar
    - editor_chrome.css#L859
+4. Adjust monaco icon label offset.
+   - editor_chrome.css#L1453 ~ 1459
+5. Remove the black borders flanking the centered layout.
+   - editor_chrome.css#L1461 ~ 1463
+6. Adjust the display of rounded corners in the editing area with centered layout.
+   - editor_chrome.css#L1465 ~ 1467
 
 ## How to use
 
 1. Close Visual Studio Code.
-2. Copy editor_chrome.css to extension css folder path and replace the original file. (See Remarks for the path of the css folder.)
+2. Copy editor_chrome.css to extension css folder path and replace the original file.
+   - See [Remarks](#visual-studio-code-extension-css-folder-path) for the path of the css folder.
 3. Run Visual Studio Code as administrator.
    - Windows: Right-click on the Visual Studio Code shortcut and select `Run as administrator`.
    - MacOS: Open a terminal and run `sudo /Applications/Visual\ Studio\ Code.app/Contents/MacOS/Electron`.
@@ -39,9 +46,14 @@
 
 ## Remarks
 
-Fluent UI version: 3.9.0
-Visual Studio Code version: 1.87.2
-Visual Studio Code extension css folder path:
+### Testing platform
+
+- System: Windows 11 23H2
+- Fluent UI version: 3.9.0
+- Visual Studio Code version: 1.88.1
+- Date: 2024-04-13
+
+### Visual Studio Code extension css folder path
 
 - Windows: `%USERPROFILE%\.vscode\extensions\leandro-rodrigues.fluent-ui-vscode-3.9.0\out\css\editor_chrome.css`
 - MacOS: `~/.vscode/extensions/leandro-rodrigues.fluent-ui-vscode-3.9.0/out/css/editor_chrome.css`
